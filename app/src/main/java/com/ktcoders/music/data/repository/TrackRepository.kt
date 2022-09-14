@@ -12,8 +12,9 @@ open class TrackRepository @Inject constructor(
     private val appDatabase: AppDatabase,
     private val retrofitApi: RetrofitApi
 ) {
+
     suspend fun getAllTracks(): StateResult<List<TrackEntity>> {
-//        try {
+        try {
         val response = retrofitApi.getAllTracks()
         if (response.isSuccessful) {// 200
             response.body()?.let {
@@ -21,12 +22,13 @@ open class TrackRepository @Inject constructor(
                 return StateResult.Success(it)
             }
         }
-//        } catch (e: Exception) {
-//            e.printStackTrace()
-//            return StateResult.Failure(e)
-//        }
+        } catch (e: Exception) {
+            e.printStackTrace()
+            return StateResult.Failure(e)
+        }
         return StateResult.Loading
     }
+
 
 }
 

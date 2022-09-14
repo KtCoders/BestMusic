@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyProjects/BestMusic/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/MyProjects/BestMusic/app/src/main/res/layout/fragment_home.xml" value="0.23802083333333332" />
         <entry key="..\:/MyProjects/Music/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
         <entry key="..\:/MyProjects/Music/app/src/main/res/layout/fragment_dashboard.xml" value="0.23802083333333332" />
         <entry key="..\:/MyProjects/Music/app/src/main/res/layout/fragment_home.xml" value="0.264" />
